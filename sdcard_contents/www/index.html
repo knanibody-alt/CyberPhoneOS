@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>CyberPhoneOS // yerel-sohbet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="crt">
+    <header class="topbar">
+      <span class="dot" id="statusDot"></span>
+      <span class="title">CyberPhoneOS <span class="dim">// yerel-sohbet</span></span>
+      <span class="peer-count" id="peerCount">0 cihaz</span>
+    </header>
+
+    <main id="log" class="log" aria-live="polite"></main>
+
+    <form id="composer" class="composer">
+      <span class="prompt">&gt;</span>
+      <input id="msgInput" type="text" autocomplete="off" placeholder="mesaj yaz ve Enter'a bas" maxlength="140" />
+      <button type="submit" id="sendBtn">gonder</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

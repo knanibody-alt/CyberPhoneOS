@@ -1,0 +1,3 @@
+# Bu dosya su an firmware tarafindan okunmuyor - ileride oyun hizi,
+# duvar carpisma kurallari vb. icin ayristirilabilir (opsiyonel).
+speed_ms=220

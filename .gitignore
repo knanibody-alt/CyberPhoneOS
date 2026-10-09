@@ -1,0 +1,70 @@
+# ---- Arduino / ESP32 build output ----
+build/
+build*/
+*.elf
+*.hex
+*.bin
+*.out
+*.map
+*.eep
+*.lst
+*.sym
+*.o
+*.a
+*.d
+*.su
+*.gcno
+*.gcda
+
+# ---- PlatformIO ----
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ---- Native / cmake helpers ----
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ---- Editor / IDE ----
+# .vscode is ignored on purpose: the checked-in copy contains absolute
+# host paths and a machine-specific MSVC location.
+.vscode/
+.idea/
+*.code-workspace
+.cache/
+.clangd/
+compile_commands.json
+
+# ---- OS noise ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---- Secrets & local config ----
+# Only the example config is tracked; anything real stays local.
+secrets.h
+wifi_secrets.h
+.env
+.env.*
+*.key
+*.pem
+*.crt
+
+# ---- Runtime artifacts ----
+# Anything the firmware writes to the SD card should never be committed.
+*.log
+logs/*.csv
+sdcard_contents/logs/*.csv
+# ...except the empty header-only sample that documents the CSV format.
+!sdcard_contents/logs/wifi_scan.csv
+*.bak
+*.tmp
+*.swp
+*~
